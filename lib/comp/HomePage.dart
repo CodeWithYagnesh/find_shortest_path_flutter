@@ -102,7 +102,7 @@ class Home extends StatelessWidget {
       for (var i = 0; i < opens.length; i++) {
         r = opens[i][0];
         c = opens[i][1];
-        print("$r = ${endPosition![0]} and $c = ${endPosition![1]}");
+        // print("$r = ${endPosition![0]} and $c = ${endPosition![1]}");
         if (r == endPosition![0] && c == endPosition![1]) {
           arrived = true;
         }
@@ -507,7 +507,7 @@ class Home extends StatelessWidget {
                                   if (currentButton == end && !e) {
                                     nodes[i][j].color.value = property.end;
                                     endPosition = [i, j];
-                                    print(endPosition);
+                                    // print(endPosition);
                                     e = true;
                                   }
                                   if (currentButton == barrier) {
